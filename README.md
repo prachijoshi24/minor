@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # UnSpookify - Face Your Fears, Find Your Calm
 
 A Cognitive Behavioral Therapy (CBT) web application designed to help users face and overcome their fears through exposure therapy and guided exercises.
@@ -90,6 +91,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Thanks to all contributors who have helped shape this project.
 - Special thanks to the open-source community for their invaluable tools and libraries.
+=======
+# minor
+imminor
+>>>>>>> origin/main
 =======
 # minor
 imminor
