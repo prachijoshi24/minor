@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.19",
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.17"
+  },
+  "dependencies": {
+    "canvas": "^3.2.0",
+    "chart.js": "^4.5.1",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^3.0.3",
+    "lucide-react": "^0.554.0",
+    "react-chartjs-2": "^5.3.1"
+  },
+  "scripts": {
+    "generate-assets": "node scripts/generate-placeholders.js && node scripts/generate-silent-audio.js"
+  }
+}

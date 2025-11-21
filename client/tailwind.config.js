@@ -1,0 +1,167 @@
+// tailwind.config.js
+const colors = require('tailwindcss/colors');
+
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./public/index.html"
+  ],
+  darkMode: 'class', // or 'media' or 'class'
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: 'var(--primary-50)',
+          100: 'var(--primary-100)',
+          200: 'var(--primary-200)',
+          300: 'var(--primary-300)',
+          400: 'var(--primary-400)',
+          500: 'var(--primary-500)',
+          600: 'var(--primary-600)',
+          700: 'var(--primary-700)',
+          800: 'var(--primary-800)',
+          900: 'var(--primary-900)',
+        },
+        gray: {
+          50: 'var(--gray-50)',
+          100: 'var(--gray-100)',
+          200: 'var(--gray-200)',
+          300: 'var(--gray-300)',
+          400: 'var(--gray-400)',
+          500: 'var(--gray-500)',
+          600: 'var(--gray-600)',
+          700: 'var(--gray-700)',
+          800: 'var(--gray-800)',
+          900: 'var(--gray-900)',
+        },
+        success: {
+          100: 'var(--success-100)',
+          500: 'var(--success-500)',
+        },
+        warning: {
+          100: 'var(--warning-100)',
+          500: 'var(--warning-500)',
+        },
+        error: {
+          100: 'var(--error-100)',
+          500: 'var(--error-500)',
+        },
+        accent: 'var(--accent)',
+        'accent-2': 'var(--accent-2)',
+      },
+      borderRadius: {
+        'sm': 'var(--radius-sm)',
+        'DEFAULT': 'var(--radius)',
+        'md': 'var(--radius-md)',
+        'lg': 'var(--radius-lg)',
+        'xl': 'var(--radius-xl)',
+        '2xl': 'var(--radius-2xl)',
+        'full': 'var(--radius-full)',
+      },
+      boxShadow: {
+        'sm': 'var(--shadow-sm)',
+        'DEFAULT': 'var(--shadow)',
+        'md': 'var(--shadow-md)',
+        'lg': 'var(--shadow-lg)',
+        'xl': 'var(--shadow-xl)',
+        '2xl': 'var(--shadow-2xl)',
+        'inner': 'var(--shadow-inner)',
+        'none': 'none',
+      },
+      fontFamily: {
+        sans: ['Inter', 'Helvetica Neue', 'Arial', 'sans-serif'],
+        serif: ['Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+        mono: ['Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
+      },
+      spacing: {
+        '1': 'var(--space-1)',
+        '2': 'var(--space-2)',
+        '3': 'var(--space-3)',
+        '4': 'var(--space-4)',
+        '5': 'var(--space-5)',
+        '6': 'var(--space-6)',
+        '8': 'var(--space-8)',
+        '10': 'var(--space-10)',
+        '12': 'var(--space-12)',
+        '16': 'var(--space-16)',
+        '20': 'var(--space-20)',
+        '24': 'var(--space-24)',
+        '32': 'var(--space-32)',
+      },
+      transitionProperty: {
+        'all': 'all',
+        'colors': 'background-color, border-color, color, fill, stroke',
+        'opacity': 'opacity',
+        'transform': 'transform',
+      },
+      transitionTimingFunction: {
+        'DEFAULT': 'ease',
+        'in': 'cubic-bezier(0.4, 0, 1, 1)',
+        'out': 'cubic-bezier(0, 0, 0.2, 1)',
+        'in-out': 'cubic-bezier(0.4, 0, 0.2, 1)',
+      },
+      transitionDuration: {
+        'DEFAULT': '200ms',
+        '75': '75ms',
+        '100': '100ms',
+        '150': '150ms',
+        '200': '200ms',
+        '300': '300ms',
+        '500': '500ms',
+        '700': '700ms',
+        '1000': '1000ms',
+      },
+      zIndex: {
+        '0': 0,
+        '10': 10,
+        '20': 20,
+        '30': 30,
+        '40': 40,
+        '50': 50,
+        'auto': 'auto',
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.3s ease-out',
+        'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'breathe-in': 'breatheIn 4s ease-in-out infinite alternate',
+        'breathe-out': 'breatheOut 4s ease-in-out infinite alternate',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        breatheIn: {
+          '0%': { transform: 'scale(0.95)', opacity: '0.9' },
+          '100%': { transform: 'scale(1.1)', opacity: '1' },
+        },
+        breatheOut: {
+          '0%': { transform: 'scale(1.1)', opacity: '1' },
+          '100%': { transform: 'scale(0.95)', opacity: '0.9' },
+        },
+      },
+    },
+  },
+  variants: {
+    extend: {
+      backgroundColor: ['active', 'disabled', 'focus', 'hover'],
+      borderColor: ['active', 'disabled', 'focus', 'hover'],
+      textColor: ['active', 'disabled', 'focus', 'hover'],
+      opacity: ['disabled'],
+      cursor: ['disabled'],
+      scale: ['active', 'group-hover'],
+      transform: ['hover', 'focus'],
+      translate: ['hover', 'focus'],
+      boxShadow: ['active', 'focus', 'hover'],
+      ringWidth: ['focus-visible'],
+      ringColor: ['focus-visible'],
+      ringOffsetWidth: ['focus-visible'],
+      ringOffsetColor: ['focus-visible'],
+    },
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
+}

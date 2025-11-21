@@ -1,0 +1,17 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="petal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8b3d4"/>
+      <stop offset="100%" stop-color="#7bd3b0"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="52" fill="url(#petal)" opacity="0.25"/>
+  <g fill="none" stroke-width="6" stroke-linecap="round">
+    <path d="M60 20c18 12 18 28 0 40-18-12-18-28 0-40z" stroke="#f792c4"/>
+    <path d="M100 60c-12 18-28 18-40 0 12-18 28-18 40 0z" stroke="#7ddfc3"/>
+    <path d="M60 100c-18-12-18-28 0-40 18 12 18 28 0 40z" stroke="#78c6f4"/>
+    <path d="M20 60c12-18 28-18 40 0-12 18-28 18-40 0z" stroke="#f7c78c"/>
+  </g>
+  <circle cx="60" cy="60" r="14" fill="#fff"/>
+  <text x="60" y="66" text-anchor="middle" font-family="Inter, sans-serif" font-size="18" fill="#35524c" font-weight="700">SB</text>
+</svg>

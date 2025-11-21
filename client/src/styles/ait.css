@@ -1,0 +1,8 @@
+/* src/styles/ait.css */
+.chat-card{padding:18px;min-height:360px}
+.chat-body{height:280px;overflow:auto;padding:12px;background:#fff;border-radius:8px;box-shadow:var(--shadow)}
+.chat-input{display:flex;gap:10px;margin-top:12px}
+.bubble{padding:12px;border-radius:12px;margin:8px 0;max-width:70%}
+.bubble.user{background:#f7dfe0;margin-left:auto}
+.bubble.assistant{background:#fff;border:1px solid #eee}
+.bubble-time{font-size:11px;color:var(--muted);margin-top:6px}
